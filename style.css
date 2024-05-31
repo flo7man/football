@@ -155,7 +155,7 @@ nav {
 }
 .post-header {
   color: var(--secondary-button-fg);
-  background-color: var(--secondary-button);
+  background-color: #8b88b4 ;
   padding: 0.4em;
   border-top-left-radius: var(--primary-radius);
   border-top-right-radius: var(--primary-radius);
@@ -164,7 +164,7 @@ nav {
 .post-content {
   color: var(--secondary);
   padding: 0.4em;
-  background-color: var(--primary);
+  background-color: #e0e0e6;
   border-bottom-left-radius: var(--primary-radius);
   border-bottom-right-radius: var(--primary-radius);
 }

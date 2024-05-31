@@ -57,7 +57,13 @@ header {
   padding-bottom: 1.4em;
   border-top-left-radius: var(--primary-radius);
   border-top-right-radius: var(--primary-radius);
-  overflow: hidden; /* Добавлено для обрезки изображения по краям */
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Центрирование по вертикали */
+  justify-content: space-between; /* Центрирование по горизонтали */
+  background-image: url('top.png'); /* Установите фон */
+  background-size: cover; /* Масштабирование изображения */
+  background-position: center; /* Центрирование изображения */
 }
 
 header::before {
@@ -67,9 +73,9 @@ header::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('top.png'); /* Замените 'path/to/your/image.png' на реальный путь к вашему изображению */
-  background-size: cover;
-  background-position: center;
+  background-image: inherit; /* Наследуем изображение фона */
+  background-size: cover; /* Масштабирование изображения */
+  background-position: center; /* Центрирование изображения */
   border-top-left-radius: var(--primary-radius);
   border-top-right-radius: var(--primary-radius);
   z-index: -1; /* Отправить изображение на задний план */
@@ -159,14 +165,16 @@ nav {
   padding: 0.4em;
   border-top-left-radius: var(--primary-radius);
   border-top-right-radius: var(--primary-radius);
+  min-height: 2em;
 }
 
 .post-content {
-  color: var(--secondary);
+  color:#000000;
   padding: 0.4em;
   background-color: #e0e0e6;
   border-bottom-left-radius: var(--primary-radius);
   border-bottom-right-radius: var(--primary-radius);
+  min-height: 4em;
 }
 
 article {
